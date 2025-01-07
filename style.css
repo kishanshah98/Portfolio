@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #004b6d; /* Dark blue */
+    padding: 10px;
+    text-align: left; /* Aligns the header to the left */
+    display: flex;
+    justify-content: space-between; /* Space between name and links */
+    align-items: center;
+}
+
+nav .header-name {
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Vertically centers */
+    height: auto; /* Auto height to allow stretching */
+    padding: 40px 20px; /* Increased padding for spacing */
+    background-color: #e9f1f5; /* Light blue */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Aligns image and text horizontally */
+    align-items: flex-start; /* Align text and image to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+.about-image {
+    margin-right: 80px; /* Increased space between image and text */
+}
+
+.about-image img {
+    width: 200px; /* Adjusted image size */
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 700px; /* Increased width to stretch the text more */
+    text-align: left; /* Aligns text to the left */
+}
+
+.about-text h1 {
+    color: #004b6d; /* Dark blue */
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Slightly larger for better emphasis */
+}
+
+.about-text p {
+    font-size: 18px; /* Same size as Education section */
+    line-height: 1.5;
+    margin-bottom: 30px; /* Added margin to space out text */
+}
+
+.about-text h2 {
+    color: #004b6d; /* Dark blue */
+    margin-top: 20px;
+    font-size: 1.5em; /* Match the look of the About Me header */
+}
+
+.about-text h3 {
+    color: #004b6d; /* Dark blue */
+    margin-top: 20px;
+}
+
+/* Caption under the image */
+.about-image figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Makes the name bold */
+    color: #000; /* Black text color */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    font-family: 'Arial', sans-serif; /* A clean font style */
+}
+
+/* Education Section */
+.education-list {
+    list-style-type: disc; /* Show bullet points */
+    margin: 0;
+    padding-left: 20px; /* Adds space to the left for the bullets */
+    font-size: 18px; /* Same size as About Me paragraph */
+    line-height: 1.6;
+}
+
+.education-list li {
+    margin-bottom: 12px !important; /* Added space between items with important to enforce the change */
+    padding-bottom: 5px; /* Added some padding as well for additional spacing */
+}
+
+.education-list li .black-text {
+    color: black; /* Keep the text color black */
+    font-weight: normal; /* Remove the bold styling */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 30px;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004b6d; /* Dark blue */
+}
+
+#project-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 20%; /* Adjusted for smaller cards */
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .project-title {
+    padding: 15px;
+    background-color: #004b6d; /* Dark blue */
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-title {
+    background-color: #00bcd4; /* Light blue */
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #e9f1f5; /* Light blue */
+}
+
+#contact h1 {
+    font-size: 36px;
+    color: #004b6d; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+#contact a {
+    color: #004b6d; /* Dark blue */
+    text-decoration: none;
+    margin-right: 25px; /* Adds space between the links */
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Add extra styles for the links */
+.contact-link {
+    margin-right: 100px; /* Adds space between email and LinkedIn */
+}
+
+/* Additional space between About Me and Education */
+#about + .education-section {
+    margin-top: 40px; /* Increased space between the sections */
+}
